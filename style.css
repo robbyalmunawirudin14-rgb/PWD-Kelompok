@@ -8,7 +8,7 @@
 body {
     background: #f6f6f6;
     color: #333;
-    padding-bottom: 80px; /* Tambah padding agar konten tidak tertutup footer di desktop */
+    padding-bottom: 80px; 
 }
 
 /* NAVBAR */
@@ -66,7 +66,7 @@ nav a:hover {
   .hero-img {
       width: 100vw;
       height: 100vh;
-      object-fit: cover; /* Atau contain */
+      object-fit: cover; 
   }
   
 
@@ -124,4 +124,24 @@ nav a:hover {
     margin-bottom: 15px;
     font-weight: bold;
     color: #795548;
+}
+/* ORDER  */
+.order-section {
+    padding: 80px 20px;
+    text-align: center;
+    background: #efebe9;
+}
+
+.order-section form {
+    width: 320px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.order-section select, .order-section input {
+    padding: 12px;
+    border: 1px solid #999;
+    border-radius: 8px;
 }
