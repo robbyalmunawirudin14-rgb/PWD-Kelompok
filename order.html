@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CoffeeTime - ORDER</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <h1 class="logo">CoffeeTime</h1>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="menu.html">MENU</a></li>
+                <li><a href="order.html">ORDER</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="member.html">MEMBER</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="order-section">
+        <h2>Pesan Sekarang</h2>
+        <p>Pilih menu favorit Anda dan pesan langsung dari sini!</p>
+        <form id="orderForm">
+            <label for="menu-select">Pilih Menu</label>
+            <select id="menu-select" required>
+                <option value="">-- Pilih Menu --</option>
+                <option value="Cappuccino">Cappuccino - Rp 25.000</option>
+                <option value="Espresso">Espresso - Rp 20.000</option>
+                <option value="Latte">Latte - Rp 28.000</option>
+                <option value="Mocha">Mocha - Rp 30.000</option>
+            </select>
+            <label for="quantity">Jumlah</label>
+            <input type="number" id="quantity" min="1" placeholder="Jumlah" required>
+            <label for="order-name">Nama Anda</label>
+            <input type="text" id="order-name" placeholder="Nama Anda" required>
+            <label for="order-email">Email Anda</label>
+            <input type="email" id="order-email" placeholder="Email Anda" required>
+            <button type="submit">Pesan Sekarang</button>
+        </form>
+        <p id="order-status"></p>
+    </section>
+
+    <footer>
+        <p>© 2023 CoffeeTime - All Rights Reserved</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
