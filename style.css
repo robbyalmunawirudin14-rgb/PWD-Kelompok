@@ -8,6 +8,7 @@
 body {
     background: #f6f6f6;
     color: #333;
+    padding-bottom: 80px; /* Tambah padding agar konten tidak tertutup footer di desktop */
 }
 
 /* NAVBAR */
@@ -21,7 +22,7 @@ header {
 }
 
 nav {
-    width: 30%;
+    width: 80%;
     margin: auto;
     display: flex;
     justify-content: space-between;
@@ -58,10 +59,16 @@ nav a:hover {
     padding: 20px;
 }
 
-.hero h1 {
+.hero h2 {
     font-size: 35px;
     margin-bottom: 10px;
 }
+  .hero-img {
+      width: 100vw;
+      height: 100vh;
+      object-fit: cover; /* Atau contain */
+  }
+  
 
 .btn {
     padding: 12px 25px;
@@ -76,106 +83,4 @@ nav a:hover {
 
 .btn:hover {
     background: #ffb74d;
-}
-
-/* MENU */
-.menu-section {
-    padding: 80px 20px;
-    text-align: center;
-}
-
-.menu-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 25px;
-    padding-top: 30px;
-}
-
-.menu-card {
-    background: white;
-    border-radius: 15px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
-    overflow: hidden;
-    transition: 0.3s;
-}
-
-.menu-card:hover {
-    transform: scale(1.05);
-}
-
-.menu-card img {
-    width: 50%;
-    height: 100px;
-    object-fit: cover;
-}
-
-.menu-card h3 {
-    margin: 10px 0;
-}
-
-.price {
-    margin-bottom: 15px;
-    font-weight: bold;
-    color: #795548;
-}
-
-/* ABOUT */
-.about-section {
-    padding: 80px 20px;
-    text-align: center;
-    background: #d7ccc8;
-}
-
-/* CONTACT */
-.contact-section {
-    padding: 80px 20px;
-    text-align: center;
-}
-
-form {
-    width: 320px;
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-
-input, textarea {
-    padding: 12px;
-    border: 1px solid #999;
-    border-radius: 8px;
-}
-
-button {
-    padding: 12px;
-    background: #3e2723;
-    color: white;
-    border-radius: 8px;
-    border: none;
-    cursor: pointer;
-}
-
-button:hover {
-    background: #4e342e;
-}
-
-/* FOOTER */
-footer {
-    padding: 20px;
-    background: #3e2723;
-    color: white;
-    text-align: center;
-    margin-top: 20px;
-}
-
-/* FADE ANIMATION */
-.fade {
-    opacity: 0;
-    transform: translateY(40px);
-    transition: 1s;
-}
-
-.fade.show {
-    opacity: 1;
-    transform: translateY(0);
 }
