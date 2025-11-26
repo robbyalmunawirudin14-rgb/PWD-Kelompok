@@ -84,3 +84,44 @@ nav a:hover {
 .btn:hover {
     background: #ffb74d;
 }
+
+/* MENU */
+.menu-section {
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
+    padding-top: 30px;
+}
+
+.menu-card {
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    overflow: hidden;
+    transition: 0.3s;
+}
+
+.menu-card:hover {
+    transform: scale(1.05);
+}
+
+.menu-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+.menu-card h3 {
+    margin: 10px 0;
+}
+
+.price {
+    margin-bottom: 15px;
+    font-weight: bold;
+    color: #795548;
+}
