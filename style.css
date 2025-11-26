@@ -145,3 +145,32 @@ nav a:hover {
     border: 1px solid #999;
     border-radius: 8px;
 }
+/* ABOUT */
+.about-section {
+    padding: 80px 20px;
+    text-align: center;
+    background: #d7ccc8;
+}
+
+/* MEMBER */
+.member-section {
+    padding: 80px 20px;
+    text-align: center;
+    background: #d7ccc8;
+}
+
+.member-benefits {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding-top: 30px;
+    flex-wrap: wrap;
+}
+
+.benefit {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    width: 200px;
+}
